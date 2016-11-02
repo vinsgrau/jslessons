@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+</head>
+<body>
+<script>
+"use strict";
+var x,y;
+
+function countBs(a) {
+    var result = 0,i;
+    for(i = 0; i < a.length; i++) {
+    if(a.charAt(i) == "B") result++;
+    }
+    return result;
+}
+
+function countChar(a,b) {
+    var result = 0,i;
+    for(i = 0; i < a.length; i++) {
+    if(a.charAt(i) == b) result++;
+    }
+    return result;
+}
+
+
+while(true) {
+    x = prompt('Введите строку, в которой будем искать символ');
+    if (typeof x == "string") break;
+    }
+y = prompt('Какой символ искать?')
+y = y.charAt(0);
+
+alert('В строке "' + x + '" количество B - ' + countBs(x) + '\n' + 'Количество ' + y + ' - ' + countChar(x,y));
+
+
+</script>
+</body>
+</html>
