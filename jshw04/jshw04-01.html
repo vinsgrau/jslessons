@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+</head>
+<body>
+<script>
+"use strict";
+function min(a,b) {
+    var result;
+    if(a <= b) result = a;
+    else result = b;
+    return result;
+}
+
+var x,y,num1,num2,i=0;
+while(true) {
+    x = prompt('Введите первое число');
+    y = prompt('Введите второе число');
+    num1 = parseFloat(x);
+    num2 = parseFloat(y);
+    if (typeof num1 == "number" && typeof num2 == "number" && !isNaN(num1) && !isNaN(num2)) break;
+    }
+alert('Минимальное число ' + min(num1,num2));
+
+</script>
+</body>
+</html>
