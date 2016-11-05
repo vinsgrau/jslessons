@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+</head>
+<body>
+<script>
+"use strict";
+function numToObject(a){
+var obj = {}, a=parseInt(a);
+  if (a >= 0 && a <= 999) {
+    
+    obj["единицы"]=parseInt((a-parseInt(a/100)*100))-parseInt((a-parseInt(a/100)*100)/10)*10;
+    obj["десятки"]=parseInt((a-parseInt(a/100)*100)/10);
+    obj["сотни"]=parseInt(a/100);
+   }
+   else {
+    console.log("Число не подходит под заданный диапазон");
+   }
+  return obj;
+}
+console.log(numToObject(999));
+console.log(numToObject(0));
+console.log(numToObject(1000));
+console.log(numToObject(-1));
+console.log(numToObject(245));
+</script>
+</body>
+</html>
