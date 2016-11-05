@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    </title>
+</head>
+<body>
+<script>
+"use strict";
+function rgb2hex(r,g,b){
+  if(r >= 0 && r <= 255 && g >= 0 && g <= 255 && b >= 0 && b <= 255) {
+    var rh = (r < 16)?"0" + r.toString(16):r.toString(16);
+    var gh = (g < 16)?"0" + g.toString(16):g.toString(16);
+    var bh = (b < 16)?"0" + b.toString(16):b.toString(16);
+    return rh + gh + bh;
+  }
+  else return "Convert failed";
+}
+console.log(rgb2hex(3,255,55));
+console.log(rgb2hex(3,255,5));
+console.log(rgb2hex(0,"a",55));
+console.log(rgb2hex(-1,0,0));
+</script>
+</body>
+</html>
